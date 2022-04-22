@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheart" href="../styles/style.css"> -->
+    <title>Facebook - entre ou cadastre-se</title>
+</head>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left .right, form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left{
+    width: 500px;
+    align-items: flex-start;
+}
+
+.left img{
+    height: 100px;
+}
+
+.left p{
+    font-size: 30px;
+    color: #1c1e21;
+    height: 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+    left: 27px;
+}
+
+form{
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.9);
+}
+
+form input{
+    width:  100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border:  1px solid #999;
+}
+
+.right__login8tn{
+    background-color: #1877f2;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    font-family: 'Arial';
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.right__login8tn--hover:hover{
+    background-color: #4257b2;
+}
+
+.right__forget{
+    margin: 15px 0;
+    text-decoration: none;
+    text-align: center;
+    color: #1877f2;
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+.right__sign-up{
+    padding-top: 20px;
+    border-top: 1px solid #999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.right__sign-up-up8tn{
+    background-color: #42b72a;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Arial';
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.right__sign-up-up8tn--hover:hover{
+    background-color: green;
+}
+
+.right p{
+    font-family: 'Arial';
+    font-size: 15px;
+}
+
+@media (max-width: 950px){
+    .container{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 400px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .left p{
+        height: 75px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        width: 350px;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 300px){
+    .right{
+        display: flex;
+        justify-content: center;
+    }
+
+    .left{
+        display: flex;
+        justify-content: center;
+    }
+
+    .left img{
+        height: 95px;
+    }
+
+    .left p, .right p{
+        display: none;
+    }
+
+    form input, .right__forget, .right__login8tn, .right__sign-up-up8tn{
+        font-size: 12;
+    }
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="../img/logo.png" alt="FB logo">
+            <p>
+                O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+            </p>
+        </div>
+        <div class="right">
+            <form action="">
+                <input type="text" placeholder="Email ou telefone"/>
+                <input type="password" placeholder="Senha"/>
+                <a hrfe="" class="right__login8tn right__login8tn--hover">
+                    Entrar
+                </a>
+                <a hrfe="" class="right__forget right__forget--hoover">
+                    Esqueceu a senha?
+                </a>
+                <div class="right__sign-up">
+                    <a hrfe="" class="right__sign-up-up8tn right__sign-up-up8tn--hover">
+                        Criar nova conta
+                    </a>
+                </div>
+            </form>
+            <p>
+                <strong>
+                    Criar uma página
+                </strong>
+                para uma celebridade, uma marca ou uma empresa.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
